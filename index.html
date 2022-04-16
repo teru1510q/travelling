@@ -1,1 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>twm</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+</head>
+<body>
 
+  <header>
+    <h1><a href="index.html">Travelling with the Movie</a> </h1>
+    <nav>
+      <ul>
+        <a href="#about"><li>About</li></a>
+        <a href="#snap"><li>Snap</li></a>
+        <a href="#news"><li>News</li></a>
+        <a href="#contact"><li>Contact</li></a>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="mainpic">
+    <img src="img/LA/panorama.jpg" alt="">
+  </div>
+  <main>
+
+    <section id="about">
+      <h1>About</h1>
+      <div class="profile">
+        <img src="img/LA/hunberger.jpg" alt="">
+        <div class="name">
+          <h2>REIJI YAMASHITA</h2>
+          <p>xxxxxxx-xxxxxxxxxxxxx-xxxxxxxxxxxxx-xxxxxxxxxxxxx-xxxxxxxxxxxxx-xxxxxxxxxxxxx-xxxxxxxxxxxxx-xxxxxxxxxxxxx-xxxxxx</p>
+        </div>
+      </div>
+      
+    </section>
+
+    <section id="snap">
+      <h1>Snap</h1> 
+      <!--写真①-->
+      <img class="mypic1" src="img/LA/displaymap.jpg" alt="" onclick="slide1()">
+        <script>
+          var pics1 = new Array(
+            "img/LA/displaymap.jpg","img/LA/kagami.jpg","img/LA/santa.jpg","img/LA/pinkshot.jpg",
+            "img/LA/yutopic.jpg");
+          var num = 0;
+          function slide1(){
+              if (num == 4) {
+                  num = 0;
+              }
+              else {
+                  num ++;
+              }
+              document.querySelector(".mypic1").src = pics1[num];
+          }
+        </script>
+
+      <!-- 写真② -->
+      <img class="mypic2" src="img/LA/pinks.jpg" alt="" onclick="slide2()">
+        <script>
+          var pics2 = new Array(
+            "img/LA/pinks.jpg","img/LA/yutoush.jpg","img/LA/venice.jpg","img/LA/fuckin.jpg","img/LA/bird.jpg");
+          var num = 0;
+          function slide2(){
+              if (num == 4) {
+                  num = 0;
+              }
+              else {
+                  num ++;
+              }
+              document.querySelector(".mypic2").src = pics2[num];
+          }
+        </script>
+
+      <!-- 写真③ -->
+      <img class="mypic3" src="img/Korea/yutofur.jpg" alt="" onclick="slide3()">
+        <script>
+          var pics3 = new Array(
+            "img/Korea/yutofur.jpg","img/Korea/ader.jpg","img/Korea/eggdrop.jpg","img/Korea/yakiniku.jpg","img/Korea/banana.jpg");
+          var num = 0;
+          function slide3(){
+              if (num == 4) {
+                  num = 0;
+              }
+              else {
+                  num ++;
+              }
+              document.querySelector(".mypic3").src = pics3[num];
+          }
+        </script>
+
+      <!-- 写真④ -->
+      <img class="mypic4" src="img/Taipei/chinafood.jpg" alt="" onclick="slide4()">
+      <script>
+        var pics4 = new Array(
+          "img/Taipei/chinafood.jpg","img/Taipei/kyufun.jpg","img/Taipei/book.jpg","img/Taipei/siro.jpg");
+        var num = 0;
+        function slide4(){
+            if (num == 3) {
+                num = 0;
+            }
+            else {
+                num ++;
+            }
+            document.querySelector(".mypic4").src = pics4[num];
+        }
+      </script>
+
+      <!-- 写真⑤ -->
+      <img class="mypic5" src="img/FUKUOKA/iwa.jpg" alt="" onclick="slide5()">
+      <script>
+        var pics5 = new Array(
+          "img/FUKUOKA/iwa.jpg","img/FUKUOKA/kouyou.jpg","img/FUKUOKA/jinja.jpg");
+        var num = 0;
+        function slide5(){
+            if (num == 2) {
+                num = 0;
+            }
+            else {
+                num ++;
+            }
+            document.querySelector(".mypic5").src = pics5[num];
+        }
+      </script>
+
+      <!-- 写真⑥ -->
+      <img class="mypic6" src="img/Guam/breakfast.jpg" alt="" onclick="slide6()">
+      <script>
+        var pics6 = new Array("img/Guam/breakfast.jpg","img/Guam/sanpo.jpg","img/Guam/taxi.jpg","img/Guam/ikeike.jpg","img/Guam/natsuki.jpg","img/Guam/bus.jpg");
+        var num = 0;
+        function slide6(){
+            if (num == 5) {
+                num = 0;
+            }
+            else {
+                num ++;
+            }
+            document.querySelector(".mypic6").src = pics6[num];
+        }
+      </script>
+
+    </section>
+    <script>
+
+    </script>
+
+    <section id="news">
+      <h1>News</h1>
+      <dl>
+        <dt>2036.1.1</dt>
+        <dd>フィンランドでオーロラを見る</dd>
+
+        <dt>2031.11.22</dt>
+        <dd>マレーシアに移住</dd>
+
+        <dt>2030.11.22</dt>
+        <dd>結婚</dd>
+
+        <dt>2027.4.1</dt>
+        <dd>転職</dd>
+
+        <dt>2025.1.1</dt>
+        <dd>英語ペラペラ</dd>
+
+        <dt>2022.4.17</dt>
+        <dd>Happy Birthday</dd>
+      </dl>
+    </section>
+
+    <section id="contact">
+      <h1>Contact</h1>
+      <a href="https://www.instagram.com/_twm____/?ref=badge" class="insta_btn">
+        <span class="insta">
+          <i class="fab fa-instagram"></i>
+        </span>
+      </a>
+      <br>
+      <a href="https://twitter.com/nimeshima?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @nimeshima</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>      
+      <div>
+        
+      </div>
+
+    </script>
+    </section>
+
+  </main>
+  
+  <footer>(c)copy right</footer>
+
+</body>
+</html>
